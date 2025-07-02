@@ -56,17 +56,7 @@ export default function Portfolio() {
     );
 
     window.location.href = `mailto:gezahegngulilat1@gmail.com?subject=${subject}&body=${body}`;
-  };
-
-  const skills = [
-    { name: "React", level: 90 },
-    { name: "Laravel", level: 85 },
-    { name: "Python", level: 80 },
-    { name: "TypeScript", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "Flutter", level: 75 },
-  ];
-
+  };  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -193,7 +183,7 @@ export default function Portfolio() {
                     </span>
                   </div>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    Hi, I'm{" "}
+                    Hi, I&apos;m{" "}
                     <span className="bg-gradient-to-r from-indigo-600 to-cyan-600 bg-clip-text text-transparent">
                       Gezahegn
                     </span>
@@ -201,7 +191,7 @@ export default function Portfolio() {
                   <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                     I love writing clean, reliable code and turning ideas into
                     apps that solve real problems and make life a little easier.
-                    I'm always excited to learn, grow, and create things that
+                    I&apos;m always excited to learn, grow, and create things that
                     matter.
                   </p>
                 </div>
@@ -210,7 +200,7 @@ export default function Portfolio() {
                     size="lg"
                     className="bg-gradient-to-r cursor-pointer from-indigo-600 to-cyan-600 hover:from-indigo-700 hover:to-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-6 sm:px-8"
                     onClick={() => scrollToSection("contact")}>
-                    Let's Talk
+                    Let&apos;s Talk
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   <Button
@@ -295,7 +285,7 @@ export default function Portfolio() {
             <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
               <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  I'm a Software Engineering graduate from{" "}
+                  I&apos;m a Software Engineering graduate from{" "}
                   <span className="font-semibold text-indigo-600">
                     Adama Science and Technology University
                   </span>
@@ -634,7 +624,7 @@ export default function Portfolio() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-                Let's Create Something Amazing
+                Let&apos;s Create Something Amazing
               </h2>
               <p className="text-lg sm:text-xl text-indigo-200">
                 Ready to bring your ideas to life
