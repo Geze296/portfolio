@@ -59,10 +59,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f3f1ea" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e0f0d" },
-  ],
+  themeColor: "#f3f1ea",
 };
 
 /** Applies a saved theme before paint to avoid a flash. */

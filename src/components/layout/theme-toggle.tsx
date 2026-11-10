@@ -6,20 +6,14 @@ import { Moon, Sun } from "@/components/ui/icons";
 type Theme = "light" | "dark";
 const EVENT = "themechange";
 
+/** Light unless the visitor explicitly chose dark. */
 function getTheme(): Theme {
-  const set = document.documentElement.dataset.theme;
-  if (set === "light" || set === "dark") return set;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
 }
 
 function subscribe(cb: () => void) {
-  const mq = window.matchMedia("(prefers-color-scheme: dark)");
-  mq.addEventListener("change", cb);
   window.addEventListener(EVENT, cb);
-  return () => {
-    mq.removeEventListener("change", cb);
-    window.removeEventListener(EVENT, cb);
-  };
+  return () => window.removeEventListener(EVENT, cb);
 }
 
 export function ThemeToggle({ className = "" }: { className?: string }) {
